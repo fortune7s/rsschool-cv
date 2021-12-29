@@ -20,6 +20,7 @@ function descendingOrder(n) {
 
 }
 ```
+***
 ## Contact
 ![icon telefon](tel.jpg) 
 ### + 375-33-602-59-56
