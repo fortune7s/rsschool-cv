@@ -22,13 +22,13 @@ function descendingOrder(n) {
 ```
 ***
 ## Contact
-![icon telefon](tel.jpg) 
+![icon telefon](assets/img/tel.jpg) 
 ### + 375-33-602-59-56
 
-![icon emal](emal.png)
+![icon emal](assets/img/emal.png)
 ### yulia19891986@rambler.ru
 
-![icon githab](githab.png)
+![icon githab](assets/img/githab.png)
 ### [fortune7s](https://github.com/fortune7s)
 
 
