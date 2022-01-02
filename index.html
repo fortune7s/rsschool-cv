@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>CV#2. HTML, CSS & Git Basics</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CV#2. HTML, CSS & Git Basics</title>
+
 </head>
+
 <body>
-    <div class="wraiper">
-    <header> <h1>Ivanova Yulia</h1>
-    <img src="ifoto.jpg" alt="avatar"> </header>
-    <main><h2>About me</h2> 
-       <div class="aboutme">I don`t have programming experience yet. I am a lawyer by profession. I want to change the field. I have a mahtematical mind/ For a year, I taught myself HTML, CSS and JS, online courses on YouTube.books.
-        I decided to try RS-School to sustematize her knowledge and gain a more solid base.</div>
-    <h2>English language skills</h2>
-    <div class="english">My level of English is low, but I try to improve it</div>
-    <h2>Code</h2>
-   
-    <div class="taskCodewars">
-         <h3>Task:</h3>
-        <blockquote>Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order.Essentially, rearrange the digits to create the highest possible number.</blockquote>
-     </div>
-    <div class="taskCodewarsCode">
-       <pre>
+  <div class="wrapper">
+    <div class="container_header">
+      <header>
+        <div class="my_name">
+          <h1>Ivanova Yulia</h1>
+          <h2 class="my-name">Future front-end developer</h2>
+        </div>
+        <img src="assets/img/myfoto.jpg" alt="avatar" class="imgfoto" width="200">
+      </header>
+      <nav class="menu">
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#edication">Edication</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#myexemple_code">Code</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="main_container">
+      <main>
+        <section class="main-about" id="about">
+          <h2>About me</h2>
+          <div class="aboutme">
+            <p>I don`t have programming experience yet. I am a lawyer by profession. I want to change the
+              field. I have a mahtematical mind/ For a year, I taught myself HTML, CSS and JS, online courses on
+              YouTube.books.</p>
+            <p> I decided to try RS-School to sustematize her knowledge and gain a more solid base.</p>
+          </div>
+        </section>
+        <section class="main-edication" id="edication">
+          <h2>English language skills</h2>
+          <div class="english">
+            <p> My level of English is low, but I try to improve it</p>
+          </div>
+        </section>
+        <section class="main-code" id="myexemple_code">
+          <h2>Code</h2>
+          <div class="taskCodewars">
+            <h3>Task Codewars:</h3>
+            <blockquote>Your task is to make a function that can take any non-negative integer as an argument and return
+              it
+              with its digits in descending order.Essentially, rearrange the digits to create the highest possible
+              number.
+            </blockquote>
+          </div>
+          <div class="taskCodewarsCode">
+            <pre>
         function descendingOrder(n) {
         let arr = Array.from(String(n), Number)
         let arr2 = arr.sort(function (a, b) {
@@ -32,17 +68,71 @@
         })
         return Number(arr2.join(''));
       }
-    </pre></div>
-
-</main>
-
-<footer><h2>Contact</h2>
-    <div class="tel"><a href="tel:+ 375-33-602-59-56">+ 375-33-602-59-56</a></div>
-    <div class="emal"> <a href="mailto:yulia19891986@rambler.ru">email: yulia19891986@rambler.ru</a> </div>
-    <div class="github"><a href="https://github.com/fortune7s">my github</a>
-       
+          </pre>
+          </div>
+        </section>
+      </main>
+      <aside>
+        <section class="allskills" id="skills">
+          <div class="container_allskills">
+            <h2>Soft Skills</h2>
+            <ul class="skills">
+              <li>Purposeful</li>
+              <li>Diligence</li>
+              <li>Сommunicative</li>
+              <li>Active</li>
+            </ul>
+            <h2>Hard Skills</h2>
+            <ul class="skills">
+              <li>HTML
+                <div class="level">
+                  <span class="level-html"></span>
+                </div>
+              </li>
+              <li>CSS
+                <div class="level">
+                  <span class="level-css"></span>
+                </div>
+              </li>
+              <li>JS
+                <div class="level">
+                  <span class="level-js"></span>
+                </div>
+              </li>
+              <li>GIT
+                <div class="level">
+                  <span class="level-git"></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="mycontact" id="contact">
+          <h2>Contact</h2>
+          <div class="tel"><a href="tel:+375-33-602-59-56">+ 375-33-602-59-56</a></div>
+          <div class="emal"> <a href="mailto:yulia19891986@rambler.ru"> My email</a> </div>
+          <div class="github"><a href="https://github.com/fortune7s">My github</a></div>
+        </section>
+      </aside>
     </div>
-</footer>
-</div>
+
+    <footer>
+      <div class="footer-year"> 
+       <pre>2022
+year
+       </pre> 
+       </div>
+      <div class="footer-github">
+        <a href="https://github.com/fortune7s" target="_blank">
+          <img src="assets/img/github.png" alt="github"> </a>
+      </div>
+      <div class="footer-rsschool">
+        <a href="http://rs.school/" target="_blank">
+          <img src="assets/img/rs.png" alt="RS-School" width="150">
+        </a>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>

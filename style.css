@@ -1,55 +1,225 @@
-.wraiper{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #cccccc;
+    background-image: linear-gradient(rgb(210, 238, 238), rgb(116, 156, 168), rgb(61, 90, 107));
+}
+
+.wrapper {
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 120%;
-    color:black;
-    position: relative;
-    left: 20%;
     border: 2px solid rgb(3, 45, 65);
-}
-header{
-    background-image: url(st.jpg);
-    height: 150px;
-    border-bottom: 2px solid rgb(3, 45, 65);;
-}
-header h1{ text-align: right;
-margin-right: 10%;
-color: rgb(3, 45, 65);}
-img{
-    position: relative;
-    left: 70%;
-    width: 20%;
-    border: 2px solid rgb(3, 45, 65);
-    border-radius: 50%;
+    background: white;
+    margin: auto;
+
 }
 
-h2{
-    color: rgb(3, 45, 65);
+div.container_header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/img/st.jpg);
+    border-bottom: 2px solid rgb(3, 45, 65);
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 250px;
+    justify-content: space-between;
+}
+
+div.my_name {
+    padding: 10px 40px 0px;
+    text-align: center;
+}
+
+.imgfoto {
+    border: 2px solid rgb(3, 45, 65);
+    height: 100%;
+    margin-left: 20px;
+}
+
+.menu {
+    background: #034a6698;
+    padding: 10px 15px;
+}
+
+.menu li {
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+.main_container {
+
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    background-image: url(assets/img/fon_main.jpg);
+    width: 100%;
+}
+
+.main_container h2 {
     padding: 0px 10%;
     margin: 5px;
-    background-color: rgb(50, 153, 153);
+    background-color: rgba(3, 74, 102, 0.86);
+    color: rgb(14, 15, 15);
+    font-weight: bold;
+    font-style: italic;
 }
-main div{ margin-left: 15px;
-   width: 60%;
+
+main {
+    display: flex;
+    flex-direction: column;
 }
-h3{color: rgb(3, 45, 65);
-    padding: 0px 10%;
-    margin: 0px;
-text-decoration: underline;}
-blockquote{ margin: 0px;}
-/*.taskCodewars{
+
+main>section>div>p {
+    padding: 5px 15px;
+    width: 80%;
+    line-height: 1.3em;
+}
+
+h3 {
     padding-left: 10px;
-}*/
-.taskCodewarsCode{
-    color: bisque;
-    background-color: rgb(2, 9, 19);
+    text-decoration: underline;
 }
-footer{
-    position: absolute;
-    bottom: 100px;
-    right: 15px;
+
+.taskCodewarsCode {
+    padding-top: 10px;
+    background: rgb(3, 11, 20);
+    color: rgb(241, 241, 236);
 }
-a:hover{color: red;}
-a:visited{color: blueviolet;}
+
+aside {
+
+    align-self: center;
+}
+
+aside li {
+    display: list-item;
+    padding: 5px 10px;
+    margin-right: 10px;
+    line-height: 1.5;
+    list-style-type: circle;
+    font-weight: bold;
+}
+
+.level {
+    display: flex;
+    background: rgb(170, 156, 202);
+    height: 15px;
+}
+
+.level span {
+    background: rgb(54, 96, 112);
+}
+
+.level .level-html {
+    width: 60%;
+}
+
+.level .level-css {
+    width: 60%;
+}
+
+.level .level-js {
+    width: 40%;
+}
+
+.level .level-git {
+    width: 20%;
+}
+
+.mycontact div a {
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 5px 20px;
+    color: black;
+
+}
+
+.mycontact div a:hover {
+    text-decoration: underline;
+
+}
+
+footer {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+
+footer div {
+    align-self: center;
+}
+
+.footer-year {
+    max-height: 100px;
+    font-size: 200%;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+    line-height: 0.6em;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .main_container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    @media screen and (max-width: 640px) {
+
+        .main_container {
+            flex-direction: column;
+        }
+
+        .main,
+        aside {
+            width: 100%;
+
+        }
+
+        li {
+            text-align: center;
+        }
+
+
+        footer {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
