@@ -24,7 +24,7 @@ body {
 div.container_header {
     display: flex;
     flex-direction: column;
-    background-image: url(st.jpg);
+    background-image: url(assets/img/st.jpg);
     border-bottom: 2px solid rgb(3, 45, 65);
 }
 
@@ -75,7 +75,7 @@ div.my_name {
     display: flex;
     flex-direction: row;
     text-align: justify;
-    background-image: url(fon_main.jpg);
+    background-image: url(assets/img/fon_main.jpg);
     width: 100%;
 }
 
