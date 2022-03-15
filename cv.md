@@ -32,4 +32,3 @@ function descendingOrder(n) {
 ### [fortune7s](https://github.com/fortune7s)
 
 
-gi
