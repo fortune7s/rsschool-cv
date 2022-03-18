@@ -28,7 +28,7 @@ function descendingOrder(n) {
 ![icon emal](assets/img/emal.png)
 ### yulia19891986@rambler.ru
 
-![icon githab](assets/img/githab.png)
+![icon githab](assets/img/github.png)
 ### [fortune7s](https://github.com/fortune7s)
 
 
